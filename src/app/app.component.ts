@@ -10,5 +10,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'holamundo';
+  nombre = 'Juan Pablo';
+  textoplaceholder = 'Escriba algo aqui';
+
+  constructor() {
+    setInterval(() => this.nombre = 'Yudi', 3500);
+  }
+
+  getSuma(numero1: number, numero2: number) {
+    return numero1 + numero2;
+  }
 }
