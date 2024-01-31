@@ -12,9 +12,12 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   nombre = 'Juan Pablo';
   textoplaceholder = 'Escriba algo aqui';
+  deshabilitado = true;
 
   constructor() {
     setInterval(() => this.nombre = 'Yudi', 3500);
+    setInterval(() => this.deshabilitado = false, 3500);
+
   }
 
   getSuma(numero1: number, numero2: number) {
